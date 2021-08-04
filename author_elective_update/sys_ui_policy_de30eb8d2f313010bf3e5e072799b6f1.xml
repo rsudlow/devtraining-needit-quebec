@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
+    <sys_ui_policy action="DELETE">
+        <active>true</active>
+        <conditions table="x_58872_needit_needit">u_what_needed=other^EQ<item display_value="Other" endquery="false" field="u_what_needed" goto="false" newquery="false" operator="=" or="false" value="other"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </conditions>
+        <description/>
+        <global>true</global>
+        <inherit>false</inherit>
+        <isolate_script>true</isolate_script>
+        <model_id/>
+        <model_table/>
+        <on_load>true</on_load>
+        <order>100</order>
+        <reverse_if_false>true</reverse_if_false>
+        <run_scripts>false</run_scripts>
+        <script_false><![CDATA[function onCondition() {
+
+}]]></script_false>
+        <script_true><![CDATA[function onCondition() {
+		// Display a message under the Other field to explain what to put in the
+		// Other field.
+		g_form.showFieldMsg('u_other','Briefly explain what you need.','info');
+	 }]]></script_true>
+        <set_values/>
+        <short_description>NeedIt show or hide Other field</short_description>
+        <sys_class_name>sys_ui_policy</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-04 18:16:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>de30eb8d2f313010bf3e5e072799b6f1</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name>NeedIt show or hide Other field</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_ui_policy_de30eb8d2f313010bf3e5e072799b6f1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-04 20:17:50</sys_updated_on>
+        <table>x_58872_needit_needit</table>
+        <ui_type>10</ui_type>
+        <view display_value="User" name="User">User</view>
+    </sys_ui_policy>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>ef59e9ebdba28cd052cec59705961950</instance_id>
+        <instance_name>dev98444</instance_name>
+        <name>sys_ui_policy_de30eb8d2f313010bf3e5e072799b6f1</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_policy"&gt;&lt;sys_ui_policy action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;conditions table="x_58872_needit_needit"&gt;u_what_needed=other^EQ&lt;item display_value="Other" endquery="false" field="u_what_needed" goto="false" newquery="false" operator="=" or="false" value="other"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/conditions&gt;&lt;description/&gt;&lt;global&gt;true&lt;/global&gt;&lt;inherit&gt;false&lt;/inherit&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;model_id/&gt;&lt;model_table/&gt;&lt;on_load&gt;true&lt;/on_load&gt;&lt;order&gt;100&lt;/order&gt;&lt;reverse_if_false&gt;true&lt;/reverse_if_false&gt;&lt;run_scripts&gt;false&lt;/run_scripts&gt;&lt;script_false&gt;&lt;![CDATA[function onCondition() {
+
+}]]&gt;&lt;/script_false&gt;&lt;script_true&gt;&lt;![CDATA[function onCondition() {
+		// Display a message under the Other field to explain what to put in the
+		// Other field.
+		g_form.showFieldMsg('u_other','Briefly explain what you need.','info');
+	 }]]&gt;&lt;/script_true&gt;&lt;set_values/&gt;&lt;short_description&gt;NeedIt show or hide Other field&lt;/short_description&gt;&lt;sys_class_name&gt;sys_ui_policy&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-04 18:16:37&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;de30eb8d2f313010bf3e5e072799b6f1&lt;/sys_id&gt;&lt;sys_mod_count&gt;20&lt;/sys_mod_count&gt;&lt;sys_name&gt;NeedIt show or hide Other field&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="NeedIt" source="x_58872_needit"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_policy_de30eb8d2f313010bf3e5e072799b6f1&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-04 20:17:50&lt;/sys_updated_on&gt;&lt;table&gt;x_58872_needit_needit&lt;/table&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view display_value="User" name="User"&gt;User&lt;/view&gt;&lt;/sys_ui_policy&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>391866901</payload_hash>
+        <record_name>NeedIt show or hide Other field</record_name>
+        <reverted_from/>
+        <source>00dedfa82f613010bf3e5e072799b64a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-04 20:17:50</sys_created_on>
+        <sys_id>584c3b852fb13010bf3e5e072799b6cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17b12d0ac880000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-04 20:17:50</sys_updated_on>
+        <type>UI Policy</type>
+        <update_guid>904c3b85a3b13010b8f1929121a7d3cd</update_guid>
+        <update_guid_history>904c3b85a3b13010b8f1929121a7d3cd:391866901,d1eaf785abb1301009e9bad834a82c9c:1456644644,9b297b0539b13010f20aca0b22683af1:391866901,fdc83b81b2b130102ebef046e9247f33:-1669959058,43787bc1b6b130102ca3795e76687788:-492396850,a4973b8180b1301013d7036908ccec60:1237743312,0c447fcde87130108acbf1adcc04f358:964788639,5e43f3cdb97130106182d60686fb1da0:-1844025185,2b2377cde471301027831d3c458f1021:278503612,9ba2bf8d3d713010f2e7a4773466cd91:-509448548,3742f34d2371301017c9ca618caed485:-1370891071,a22febc9547130108c68c9f417ca7cd0:-1106954172,63fea7c98f713010095f44b4609bf381:522791161,fddea7c939713010618e4ff38dcc72f1:-470844769,992e2f893d713010fe240034530b3822:-439900747,781ae3c5c3713010f58c8c62c37942b1:-920001473,7709e7851e7130105b86f2c974c244d1:-439900747,1ba7e34598713010905bcb350f6a6683:-1688641695,14576f053c7130105d82249c048571fd:277249064,0436a781587130100090d85f9b77226f:-1789665575,3880af4df93130107352c0b46bd9439a:277249064</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-04 20:22:20</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy">sys_ui_policy</sys_db_object>
+        <sys_id>b19776ad389547e2abdd2da620478fa4</sys_id>
+        <sys_metadata>de30eb8d2f313010bf3e5e072799b6f1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>NeedIt show or hide Other field</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent display_value="NeedIt">523261242ff13010bf3e5e072799b6ad</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_de30eb8d2f313010bf3e5e072799b6f1</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_de30eb8d2f313010bf3e5e072799b6f1">584c3b852fb13010bf3e5e072799b6cd</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-04 20:22:20</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
